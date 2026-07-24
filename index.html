@@ -5,126 +5,122 @@
 
 <title>For Haris 🤍</title>
 
-
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@300;400&display=swap');
+
 
 body {
     margin: 0;
-    padding: 0;
+    height: 100vh;
+    overflow: hidden;
     background: #cfe8ff;
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-/* Bunga atas */
-.flowers {
-    font-size: 40px;
-    margin-top: 20px;
-    animation: float 3s infinite;
+/* tulisan utama */
+
+.container {
+    z-index: 5;
 }
 
-
-@keyframes float {
-
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(15px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-
-}
-
-
-
-/* Tajuk */
 
 h1 {
-    color: #1e4f91;
-    font-size: 40px;
-}
-
-
-.subtitle {
-    font-size: 18px;
-}
-
-
-
-/* Button */
-
-.button {
-
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: white;
-    color: #1e4f91;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-
-
-/* Surat */
-
-#heart {
-
-    background: white;
-    margin: 50px auto;
-    padding: 30px;
-    width: 80%;
-    border-radius: 25px;
-    box-shadow: 0 5px 15px #aaa;
-
-}
-
-
-#heart h2 {
-
-    color: #1e4f91;
-
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+    font-weight: 500;
+    color: #2c5d8a;
+    margin: 10px;
 }
 
 
 p {
-
-    line-height: 1.8;
+    font-size: 17px;
+    color: #456;
 }
 
 
 
-/* Hati */
+/* button */
 
-.hearts {
+button {
 
-    font-size: 35px;
-    animation: love 1.5s infinite;
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #2c5d8a;
+    font-size: 15px;
 
 }
 
 
-@keyframes love {
 
-    50% {
-        transform: scale(1.3);
+/* bunga terbang */
+
+.flower {
+
+    position: absolute;
+    bottom: -50px;
+    font-size: 30px;
+    animation: fly 8s linear infinite;
+
+}
+
+
+@keyframes fly {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
     }
 
 }
 
 
 
-</style>
+/* love terbang */
 
+.heart {
+
+    position: absolute;
+    bottom: -50px;
+    color: #ff7fa8;
+    font-size: 25px;
+    animation: heartUp 7s linear infinite;
+
+}
+
+
+
+@keyframes heartUp {
+
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+
+}
+
+
+</style>
 
 </head>
 
@@ -133,121 +129,72 @@ p {
 <body>
 
 
-<!-- BUNGA -->
 
-<div class="flowers">
+<div class="container">
 
-🌸 🌷 🌹 🌸 🌷
+
+<h1>
+For Haris 🤍
+</h1>
+
+
+<p>
+Almost 1 Year With Haris 🤍✨
+</p>
+
+
+<button>
+Open My Heart 💌
+</button>
+
 
 </div>
 
 
 
-<h1>
+<!-- BUNGA -->
 
-For Haris 🤍
-
-</h1>
-
-
-
-<p class="subtitle">
-
-Almost 1 Year With Haris ✨
-
-</p>
+<div class="flower" style="left:10%; animation-delay:0s;">
+🌸
+</div>
 
 
-
-<!-- BUTTON -->
-
-<a href="#heart" class="button">
-
-Open My Heart 🤍
-
-</a>
+<div class="flower" style="left:30%; animation-delay:2s;">
+🌷
+</div>
 
 
+<div class="flower" style="left:70%; animation-delay:1s;">
+🌹
+</div>
 
 
-<!-- SURAT CINTA -->
-
-<section id="heart">
-
-
-<h2>
-
-My Heart For Haris 💌
-
-</h2>
-
-
-<p>
-
-Hi Haris,
-
-</p>
-
-
-<p>
-
-Thank you for everything you have done for me.
-Thank you for every little effort, every support,
-and every moment we shared together.
-
-</p>
-
-
-<p>
-
-I know sometimes you feel tired,
-stress and worried about the future.
-But please remember, you are stronger than you think.
-
-</p>
-
-
-<p>
-
-I will always be here cheering for you,
-supporting you and being proud of you.
-
-</p>
-
-
-<p>
-
-Thank you for being my favourite person.
-I hope we create more beautiful memories together.
-
-</p>
-
-
-<p>
-
-I love you always 🤍
-
-</p>
-
-
-<p>
-
-Love, Putri 🌸
-
-</p>
-
-
-</section>
+<div class="flower" style="left:85%; animation-delay:3s;">
+🌸
+</div>
 
 
 
 
 <!-- LOVE -->
 
-<div class="hearts">
+<div class="heart" style="left:20%; animation-delay:1s;">
+❤️
+</div>
 
-❤️ 🤍 ❤️ 🤍 ❤️
 
+<div class="heart" style="left:50%; animation-delay:3s;">
+🤍
+</div>
+
+
+<div class="heart" style="left:75%; animation-delay:2s;">
+❤️
+</div>
+
+
+<div class="heart" style="left:90%; animation-delay:4s;">
+🤍
 </div>
 
 
